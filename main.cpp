@@ -36,7 +36,7 @@ int main()
   //Task 1.62
   //Using only the multiplication operation (double or float)
   {
-    double a = 2.0;
+    const double a = 2.0;
     // a^3 and a^10 (4 operation)
     std:: cout << "a)" << std::endl;
     {

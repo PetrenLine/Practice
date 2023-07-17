@@ -17,7 +17,7 @@ int main()
   //Crossed out the last digit on the right and wrote it at the beginning.
   {
     std::string str( "123" );
-    std::cout << "2.15:  " << str[2] << str[0] << str[1] << std::endl;
+    std::cout << "Task 2.15:  " << str[2] << str[0] << str[1] << std::endl;
   }
   //Task 2.27
   //2.27. В трехзначном числе x зачеркнули первую цифру. Когда полученное число
@@ -32,12 +32,23 @@ int main()
     std::cout << "First part of 2.27 (x -> n):  " << n << std::endl;
   }
   {
-    std::cout << "Enter n" << std::endl;
+    std::cout << "Enter n (three value)" << std::endl;
     int n;
     std::cin >> n;
     std::string str = std::to_string( n );
     std::cout << "Second part of 2.27 (n -> x):  " << str[2] << str[0] << str[1] << std::endl;
-    return 0;
+
+  }
+  //Task 2.34
+  {
+    std::string a( "12" );
+    std::string b( "5" );
+    int i = std::stoi( a );
+    int m = std::stoi( b );
+    int n;
+    n = i + m;
+    std::string str = std::to_string( n );
+    std::cout << "Task 2.34:  " << std::endl << str[0] << std::endl << str[1] << std::endl;
   }
 
 }
