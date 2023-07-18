@@ -21,3 +21,5 @@ target_link_libraries(Practice_num2 Qt${QT_VERSION_MAJOR}::Core)
 
 install(TARGETS Practice_num2
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
+
+
