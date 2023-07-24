@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 
-project(Practice LANGUAGES CXX)
+project(Practice_num4 LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -14,19 +14,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
-add_executable(Practice
+add_executable(Practice_num4
   main.cpp
 )
-target_link_libraries(Practice Qt${QT_VERSION_MAJOR}::Core)
+target_link_libraries(Practice_num4 Qt${QT_VERSION_MAJOR}::Core)
 
-install(TARGETS Practice
+install(TARGETS Practice_num4
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
-
-add_subdirectory(Practice_num1)
-add_subdirectory(Practice_num2)
-add_subdirectory(Practice_num3)
-add_subdirectory(Practice_num4)
-add_custom_target(ProjectRelatedFiles SOURCES
-.gitignore
-.astylerc
-)
