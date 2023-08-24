@@ -33,6 +33,7 @@ add_subdirectory(Practice_num8)
 add_subdirectory(Practice_num_10)
 add_subdirectory(Practice_num_11)
 add_subdirectory(Practice_num_12)
+add_subdirectory(Practice_num_13)
 add_custom_target(ProjectRelatedFiles SOURCES
 .gitignore
 .astylerc
