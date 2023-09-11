@@ -10,7 +10,7 @@ int main()
     std::cout << "   Enter the number of the day of the week English version (1-Sunday..7-Saturday)" << std:: endl;
     std:: cin >> num;
 
-    if ( num > 0 && num < 7 )
+    if ( num > 0 && num < 9 )
     {
 
       if ( num == 1 )
@@ -34,8 +34,6 @@ int main()
       if ( num == 7 )
         std::cout << "    Saturday" << std::endl;
 
-      if ( num == 8 )
-        exit( 0 );
     }
 
     else

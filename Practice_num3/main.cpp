@@ -84,38 +84,40 @@ int main()
   {
     //Task 3.28
     std::cout << "Task 3.28:" << std::endl;
-    bool r;
-    const bool A = true;
-    const bool B = false;
-    const bool C = true;
+    int r;
+    const int A = 156;
+    const int B = 651;
+    const int C = 50;
     {
       //a)
-      r = ( ( A && B ) > 100 );
+      r = ( A > B ) && 100 ;
+      bool result = ( A > B );
+      r = result && 100;
       std:: cout << "   a) Expression: " << r << std::endl;
     }
     {
       //b)
-      r = ( ( A xor B ) / 2 );
+      r = ( A ^ B ) / 2 ;
       std:: cout << "   b) Expression: " << r << std::endl;
     }
     {
       //c)
-      r = ( ( A xor B ) > 0 );
+      r = ( ( A ^ B ) > 0 );
       std:: cout << "   c) Expression: " << r << std::endl;
     }
     {
       //d)
-      r = ( ( A && B && C ) / 3 );
+      r = ( A > B && B > C ) / 3;
       std:: cout << "   d) Expression: " << r << std::endl;
     }
     {
       //e)
-      r = ( ( A xor B xor C ) < 50 );
+      r = ( ( A ^ B ^ C ) < 50 );
       std:: cout << "   e) Expression: " << r << std::endl;
     }
     {
       //f)
-      r = ( ( A xor B xor C ) > 0 );
+      r = ( ( A ^ B ^ C ) > 0 );
       std:: cout << "   f) Expression: " << r << std::endl;
     }
   }
